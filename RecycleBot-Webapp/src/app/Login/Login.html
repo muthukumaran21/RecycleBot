@@ -1,0 +1,68 @@
+<ion-content _aio-C98E93DC scrollY="false" color="secondary">
+    <div _aio-AC5B0F52 #j_117 class="ion-page ion-justify-content-center ion-align-items-center">
+        <div _aio-22EA3DBE #j_118>
+            <div _aio-859927DE #j_119>
+                <ion-text _aio-F9E2D4A1 #j_120 color="primary">
+                    Glad to see you!
+                </ion-text>
+                <ion-text _aio-D58A8D89 #j_121 color="dark">
+                    Log in to continue
+                </ion-text>
+            </div>
+            <div _aio-B7AFDD2A #j_122>
+                <form _aio-5848E983 #loginForm="ngForm" #loginForm_el [aioFormChange]="loginForm"
+                class="form-component" (ngSubmit)="loginformNgSubmit__j_123($event, currentItem)">
+                    <ion-item _aio-3189AC1B #j_124__ion4Item class="ion-no-padding">
+                        <ion-label _aio-3189AC1B #j_124__ion4Label color="dark" position="stacked">
+                            Username
+                        </ion-label>
+                        <ion-icon _aio-3189AC1B #j_124__icon name="person" slot="end" color="light" class="input-icon">
+                        </ion-icon>
+                        <ion-input _aio-3189AC1B #username="ngModel" #username_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                        autocomplete="new-password" maxlength="254" name="username" readonly="false" type="email"
+                        color="dark" minlength="1" required="true" aioControlValidation="maxLength:254|||pattern:^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                        </ion-input>
+                    </ion-item>
+                    <ion-text _aio-B818C10A #j_125 color="danger" *ngIf="username.touched && username.errors"
+                    [ngClass]="{'visible': username.touched && username.errors}">
+                        Please enter a valid Email
+                    </ion-text>
+                    <ion-item _aio-B38ACAE3 #j_126__ion4Item class="ion-no-padding">
+                        <ion-label _aio-B38ACAE3 #j_126__ion4Label color="dark" position="stacked">
+                            Password
+                        </ion-label>
+                        <ion-icon _aio-B38ACAE3 #j_126__icon name="eye" slot="end" color="light" class="eye">
+                        </ion-icon>
+                        <ion-input _aio-B38ACAE3 #password="ngModel" #password_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                        autocomplete="new-password" name="password" readonly="false" type="password" color="dark"
+                        required="true" class="password" aioControlValidation>
+                        </ion-input>
+                    </ion-item>
+                    <ion-text _aio-66E065CB #j_127 color="danger" *ngIf="password.touched && password.errors && password.errors.required"
+                    [ngClass]="{'visible': password.touched && password.errors && password.errors.required}">
+                        Please enter a Password
+                    </ion-text>
+                    <ion-row _aio-DDD52F4B #j_128 class="ion-no-border ion-align-items-center">
+                        <ion-checkbox _aio-1CB720EB #rememberme="ngModel" #rememberme_el [ngModel]="false"
+                        mode="ios" name="rememberme" value="rememberme" (ionChange)="this.formUtils.forgotMe($event, this.loginForm.form)">
+                        </ion-checkbox>
+                        <ion-label _aio-2CD11264 #j_130 color="dark">
+                            Keep me logged in
+                        </ion-label>
+                    </ion-row>
+                    <ion-button _aio-EC4949C2 #j_131 expand="block" size="large" type="submit" color="primary"
+                    (click)="signinbuttonClick__j_131($event, currentItem)">
+                        Sign in
+                    </ion-button>
+                </form>
+                <div _aio-7E8AFA4B #j_132>
+                    <ion-text _aio-312BFF14 #j_133 color="primary" (click)="signuptextClick__j_133($event, currentItem)">
+                        Sign up
+                    </ion-text>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>

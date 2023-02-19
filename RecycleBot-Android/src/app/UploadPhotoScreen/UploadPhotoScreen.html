@@ -1,0 +1,24 @@
+<ion-header _aio-C3A43B06>
+    <ion-toolbar _aio-E832F93D #j_78>
+        <ion-title _aio-836BB054 #j_80>
+            Take and upload photo
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-6FC49545 class="ion-padding">
+    <ion-button _aio-A6197135 #j_73 expand="block" (click)="takephotobuttonClick__j_73($event, currentItem)">
+        Take Photo
+    </ion-button>
+    <ion-img _aio-A13F504A #j_74 src="{{__getMapping(currentItem, 'j_74__imageSrc', 'assets/images/a_1_1676765517.jpg', false)}}"
+    alt="Image error" [class.aioHidden]="!__getMapping(currentItem, 'j_74__visible', true)">
+    </ion-img>
+    <ion-button _aio-E3D4AB07 #j_75 expand="block" (click)="uploadphotobuttonClick__j_75($event, currentItem)"
+    [class.aioHidden]="!__getMapping(currentItem, 'j_75__visible', true)" *ngIf="imageURI">
+        Upload photo
+    </ion-button>
+    <ion-button _aio-0B65D5C1 #j_76 routerDirection="forward" [routerLink]="['/recyclinglocations']">
+        NEXT
+    </ion-button>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>

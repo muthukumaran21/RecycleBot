@@ -1,0 +1,86 @@
+{
+  "cordova-plugin-camera": {
+    "source": {
+      "type": "local",
+      "path": "/srv/appery/jenkins/workspace/9c21cc0b-e4c1-4ce0-a643-952287eed916-android/app/node_modules/cordova-plugin-camera"
+    },
+    "is_top_level": true,
+    "variables": {
+      "ANDROIDX_CORE_VERSION": "1.6.+"
+    }
+  },
+  "cordova-plugin-file": {
+    "source": {
+      "type": "local",
+      "path": "/srv/appery/jenkins/workspace/9c21cc0b-e4c1-4ce0-a643-952287eed916-android/app/node_modules/cordova-plugin-file"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "local",
+      "path": "/srv/appery/jenkins/workspace/9c21cc0b-e4c1-4ce0-a643-952287eed916-android/app/node_modules/cordova-plugin-geolocation"
+    },
+    "is_top_level": true,
+    "variables": {
+      "GPS_REQUIRED": "true"
+    }
+  },
+  "cordova-plugin-resource-generator": {
+    "source": {
+      "type": "local",
+      "path": "/srv/appery/jenkins/workspace/9c21cc0b-e4c1-4ce0-a643-952287eed916-android/app/node_modules/cordova-plugin-resource-generator"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ionic-webview": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic-webview@^5.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device@2.1.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-splashscreen": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-splashscreen@6.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-statusbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-statusbar@2.4.3"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ionic-keyboard": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic-keyboard@^2.2.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-sqlite-ext": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-sqlite-ext"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

@@ -1,0 +1,53 @@
+<ion-header _aio-490CB7BC>
+    <ion-toolbar _aio-5FE46C02 #j_68>
+        <ion-title _aio-679EF68F #j_70>
+            Home
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-803E88FA>
+    <div _aio-BB39350C #j_51>
+        What would you like to recycle?
+    </div>
+    <div _aio-59792CA8 #j_52>
+        <span *ngIf="false">
+            <ion-img _aio-D14A685C #j_53 src="assets/images/autocomplete.png">
+            </ion-img>
+        </span>
+        <ion-auto-complete [dataProvider]="statesDictionary" (itemSelected)="stateSelected($event)">
+        </ion-auto-complete>
+    </div>
+    <h2 _aio-F7E505AF #j_54>
+    </h2>
+    <ion-grid _aio-28CCDC8D #j_55 *ngIf="state">
+        <ion-row _aio-401F7C5B #j_56>
+            <ion-col _aio-81451E0F #j_57>
+                <ion-text _aio-3860C432 #j_58>
+                    Name:
+                </ion-text>
+            </ion-col>
+            <ion-col _aio-D90F7750 #j_59>
+                <ion-text _aio-F31D8D51 #j_60>
+                    {{ state.name }}
+                </ion-text>
+            </ion-col>
+        </ion-row>
+        <ion-row _aio-1700A81C #j_61>
+            <ion-col _aio-A1D3889D #j_62>
+                <ion-text _aio-A02C39C3 #j_63>
+                    Description:
+                </ion-text>
+            </ion-col>
+            <ion-col _aio-76C69AC0 #j_64>
+                <ion-text _aio-EC06ED59 #j_65>
+                    {{ state.desc}}
+                </ion-text>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-button _aio-6BB439D6 #j_66 routerDirection="forward" [routerLink]="['/uploadphotoscreen']">
+        Next
+    </ion-button>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>

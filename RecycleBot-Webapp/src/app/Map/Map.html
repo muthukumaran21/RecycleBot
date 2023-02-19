@@ -1,0 +1,24 @@
+<ion-header _aio-7F3D1D26>
+    <ion-toolbar _aio-D56CBFBA #j_37>
+        <ion-title _aio-FE476219 #j_39>
+            {{ 'Map' | translate }}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-0A815510>
+    <agm-map _aio-CAAFC70E #j_31 [latitude]="__getMapping(currentItem, 'j_31__center_latitude', 40.1451, true)"
+    [longitude]="__getMapping(currentItem, 'j_31__center_longitude', -99.6680, true)"
+    [gestureHandling]="'auto'" [mapTypeId]="'roadmap'" class="full_screen" (mapClick)="googlemapMapClick__j_31($event, currentItem)">
+        <agm-marker #j_32 [latitude]="marker.latitude" [longitude]="marker.longitude" *ngFor="let marker of markers">
+            <agm-info-window #j_33>
+                <ion-text _aio-CA7BB232 #j_34>
+                    <ion-text _aio-F1E1EDD7 #j_35>
+                        {{marker.name | translate}}
+                    </ion-text>
+                </ion-text>
+            </agm-info-window>
+        </agm-marker>
+    </agm-map>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>

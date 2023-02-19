@@ -1,0 +1,26 @@
+<ion-header _aio-59862200>
+    <ion-toolbar _aio-3426E3A6 #j_21>
+        <ion-title _aio-9F13E864 #j_23>
+            Recycling Locations
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-7034A331 class="ion-padding">
+    <agm-map _aio-9BAD6F4A #j_17 [latitude]="lat" [longitude]="lng" [gestureHandling]="'auto'"
+    [mapTypeId]="'roadmap'">
+        <agm-marker #j_18 [latitude]="lat" [longitude]="lng">
+        </agm-marker>
+    </agm-map>
+    <ion-button _aio-A7344AD3 #j_19 expand="block" color="primary" (click)="button1Click__j_19($event, currentItem)">
+        Get Current Location
+    </ion-button>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>
+<ion-footer _aio-892F91BF>
+    <ion-toolbar _aio-C23F00AF #j_25>
+        <ion-title _aio-3B1530F3 #j_27>
+            Toolbar title
+        </ion-title>
+    </ion-toolbar>
+</ion-footer>

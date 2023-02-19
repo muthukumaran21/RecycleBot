@@ -1,0 +1,14 @@
+{
+    "short_name": "MyFirstIonic5App_1676710432172",
+    "name": "MyFirstIonic5App_1676710432172",
+    "description": "",
+    "display": "fullscreen",
+    "orientation": "any",
+    "start_url": "/",
+    "scope": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+
+    ]
+}

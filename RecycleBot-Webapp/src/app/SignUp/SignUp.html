@@ -1,0 +1,119 @@
+<ion-content _aio-A642242D scrollY="false" color="secondary">
+    <ion-grid _aio-5962610A #j_86>
+        <ion-row _aio-9B8C13F7 #j_87 class="ion-justify-content-start ion-align-items-center"
+        style="overflow: hidden; overflow-y: auto;">
+            <ion-col _aio-8AD0D8D9 #j_88>
+                <ion-row _aio-B18DB5F4 #j_89 class="ion-justify-content-center">
+                    <div _aio-38AFCABC #j_90>
+                        <div _aio-7664DDF9 #j_91>
+                            <ion-text _aio-9A5B7FE3 #j_92 color="primary">
+                                Sign up
+                            </ion-text>
+                        </div>
+                        <div _aio-CC3C1A5D #j_93>
+                            <form _aio-BAAC2543 #signUpForm="ngForm" #signUpForm_el [aioFormChange]="signUpForm"
+                            class="form-component" (ngSubmit)="signupformNgSubmit__j_94($event, currentItem)">
+                                <ion-item _aio-2720D9F0 #j_95__ion4Item class="ion-no-padding">
+                                    <ion-label _aio-2720D9F0 #j_95__ion4Label color="dark" position="stacked">
+                                        First name
+                                    </ion-label>
+                                    <ion-icon _aio-2720D9F0 #j_95__icon name="person" slot="end" color="light">
+                                    </ion-icon>
+                                    <ion-input _aio-2720D9F0 #firstName="ngModel" #firstName_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                                    autocomplete="new-password" maxlength="50" name="firstName" type="text" color="dark"
+                                    minlength="1" required="true" aioControlValidation="pattern:^[a-zA-Z0-9 ]*$">
+                                    </ion-input>
+                                </ion-item>
+                                <ion-text _aio-0472409F #j_96 color="danger" *ngIf="firstName.touched && firstName.errors"
+                                [ngClass]="{'visible': firstName.touched && firstName.errors}">
+                                    {{firstName.errors &amp;&amp; firstName.errors.pattern ? 'Special characters are
+                                    not allowed' : 'Please enter a valid First name'}}
+                                </ion-text>
+                                <ion-item _aio-028B5F7D #j_97__ion4Item class="ion-no-padding">
+                                    <ion-label _aio-028B5F7D #j_97__ion4Label color="dark" position="stacked">
+                                        Last name
+                                    </ion-label>
+                                    <ion-icon _aio-028B5F7D #j_97__icon name="person" slot="end" color="light">
+                                    </ion-icon>
+                                    <ion-input _aio-028B5F7D #lastName="ngModel" #lastName_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                                    autocomplete="new-password" maxlength="50" name="lastName" type="text" color="dark"
+                                    minlength="1" required="true" aioControlValidation="pattern:^[a-zA-Z0-9 ]*$">
+                                    </ion-input>
+                                </ion-item>
+                                <ion-text _aio-59EABC68 #j_98 color="danger" *ngIf="lastName.touched && lastName.errors"
+                                [ngClass]="{'visible': lastName.touched && lastName.errors}">
+                                    {{lastName.errors &amp;&amp; lastName.errors.pattern ? 'Special characters are not
+                                    allowed' : 'Please enter a valid Last name'}}
+                                </ion-text>
+                                <ion-item _aio-D0F46AC3 #j_99__ion4Item class="ion-no-padding">
+                                    <ion-label _aio-D0F46AC3 #j_99__ion4Label color="dark" position="stacked">
+                                        Username
+                                    </ion-label>
+                                    <ion-icon _aio-D0F46AC3 #j_99__icon name="mail" slot="end" color="light">
+                                    </ion-icon>
+                                    <ion-input _aio-D0F46AC3 #username="ngModel" #username_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                                    autocomplete="new-password" maxlength="254" name="username" type="email" color="dark"
+                                    minlength="1" required="true" aioControlValidation="pattern:^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                                    </ion-input>
+                                </ion-item>
+                                <ion-text _aio-B91E6657 #j_100 color="danger" *ngIf="username.touched && username.errors"
+                                [ngClass]="{'visible': username.touched && username.errors}">
+                                    Please enter a valid Email
+                                </ion-text>
+                                <ion-item _aio-702A36F6 #j_101__ion4Item class="ion-no-padding">
+                                    <ion-label _aio-702A36F6 #j_101__ion4Label color="dark" position="stacked">
+                                        Password
+                                    </ion-label>
+                                    <ion-icon _aio-702A36F6 #j_101__icon name="eye" slot="end" color="light" class="eye">
+                                    </ion-icon>
+                                    <ion-input _aio-702A36F6 #password="ngModel" #password_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                                    autocomplete="new-password" maxlength="50" name="password" type="password" color="dark"
+                                    minlength="6" required="true" class="password" aioControlValidation="pattern:^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[ -/:-@\[-`{-~]).{6,50}$">
+                                    </ion-input>
+                                </ion-item>
+                                <ion-text _aio-17E92E3C #j_102 color="danger" *ngIf="password.touched && password.errors"
+                                [ngClass]="{'visible': password.touched && password.errors}">
+                                    {{password.errors &amp;&amp; password.errors.pattern ? 'Password must be at least
+                                    6 characters long, contain letters, numbers and symbols' : 'Please enter a valid
+                                    Password'}}
+                                </ion-text>
+                                <ion-button _aio-7D8E3A7D #j_103 expand="block" size="large" type="submit" color="primary"
+                                (click)="markFormControlsAsTouched()">
+                                    Sign up
+                                </ion-button>
+                            </form>
+                        </div>
+                    </div>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+        <ion-row _aio-73B422EA #j_104>
+            <ion-col _aio-0B0519C9 #j_105 class="ion-text-center">
+                <div _aio-06721160 #j_106>
+                    <ion-text _aio-399AC8AE #j_107>
+                        By signing up you accept the
+                    </ion-text>
+                    <ion-text _aio-7972C229 #j_108 color="primary" (click)="Apperyio.navigateTo('termsofservice')">
+                        Terms of Service
+                    </ion-text>
+                    <ion-text _aio-3346C67D #j_109>
+                        and
+                    </ion-text>
+                    <ion-text _aio-E26298C8 #j_110 color="primary" (click)="Apperyio.navigateTo('privacypolicy')">
+                        Privacy Policy
+                    </ion-text>
+                </div>
+                <div _aio-0EDAD9BD #j_111>
+                    <ion-text _aio-A15439CE #j_112>
+                        Already have an account?
+                    </ion-text>
+                    <ion-text _aio-CF4E9357 #j_113 color="primary" (click)="Apperyio.navigateTo('login')">
+                        Sign in
+                    </ion-text>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>
